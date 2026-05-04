@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFlow — Completed Tasks</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-brand-icon">⚡</div>
+      <span class="nav-brand-text">Task<span>Flow</span></span>
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="tasks.html">📝 Tasks</a></li>
+      <li><a href="completed.html">✅ Completed</a></li>
+      <li><a href="reminders.html">🔔 Reminders</a></li>
+      <li><a href="about.html">💡 About</a></li>
+      <li><a href="contact.html">📬 Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main class="main-content">
+    <div class="container">
+
+      <!-- PAGE HEADER -->
+      <div class="page-header">
+        <div class="page-header-meta">
+          <span class="page-tag">Completed</span>
+        </div>
+        <h1>Done &amp; Dusted ✅</h1>
+        <p>Every task here is a win. Restore any task or clear them all.</p>
+      </div>
+
+      <!-- TASKS LIST -->
+      <div class="tasks-section">
+        <div class="tasks-header">
+          <h2>Completed Tasks</h2>
+          <div style="display:flex;align-items:center;gap:10px;">
+            <span class="tasks-count" id="completed-count">0</span>
+            <button id="clear-completed-btn" class="btn btn-danger btn-sm">🗑 Clear All</button>
+          </div>
+        </div>
+        <div class="task-list" id="completed-list">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <div id="toast-container" class="toast-container"></div>
+  <script src="script.js"></script>
+</body>
+</html>

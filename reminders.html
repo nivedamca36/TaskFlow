@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFlow — Reminders</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-brand-icon">⚡</div>
+      <span class="nav-brand-text">Task<span>Flow</span></span>
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="tasks.html">📝 Tasks</a></li>
+      <li><a href="completed.html">✅ Completed</a></li>
+      <li><a href="reminders.html">🔔 Reminders</a></li>
+      <li><a href="about.html">💡 About</a></li>
+      <li><a href="contact.html">📬 Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main class="main-content">
+    <div class="container">
+
+      <!-- PAGE HEADER -->
+      <div class="page-header">
+        <div class="page-header-meta">
+          <span class="page-tag">Reminders</span>
+        </div>
+        <h1>Scheduled Tasks 🔔</h1>
+        <p>Tasks with a set date or time. Overdue items are highlighted. Updates every minute.</p>
+      </div>
+
+      <!-- INFO CARD -->
+      <div style="background:var(--accent-glow);border:1px solid var(--border-accent);border-radius:var(--radius-md);padding:14px 18px;margin-bottom:28px;display:flex;align-items:center;gap:12px;font-size:14px;color:var(--text-secondary);">
+        <span style="font-size:18px;">💡</span>
+        <span>To add a reminder, go to <a href="tasks.html" style="color:var(--accent);text-decoration:none;font-weight:600;">Tasks</a> and set a date/time when adding a new task.</span>
+      </div>
+
+      <!-- REMINDERS LIST -->
+      <div class="tasks-section">
+        <div class="tasks-header">
+          <h2>All Reminders</h2>
+          <span class="tasks-count" id="reminders-count">0</span>
+        </div>
+        <div id="reminders-list">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <div id="toast-container" class="toast-container"></div>
+  <script src="script.js"></script>
+</body>
+</html>

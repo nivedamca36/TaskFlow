@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFlow — Tasks</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-brand-icon">⚡</div>
+      <span class="nav-brand-text">Task<span>Flow</span></span>
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="tasks.html">📝 Tasks</a></li>
+      <li><a href="completed.html">✅ Completed</a></li>
+      <li><a href="reminders.html">🔔 Reminders</a></li>
+      <li><a href="about.html">💡 About</a></li>
+      <li><a href="contact.html">📬 Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main class="main-content">
+    <div class="container">
+
+      <!-- PAGE HEADER -->
+      <div class="page-header">
+        <div class="page-header-meta">
+          <span class="page-tag">My Tasks</span>
+        </div>
+        <h1>Active Tasks</h1>
+        <p>Add new tasks, set reminders, and check things off as you go.</p>
+      </div>
+
+      <!-- TASK FORM -->
+      <div class="task-form-card">
+        <h2>+ New Task</h2>
+        <form id="task-form" autocomplete="off">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="task-input">Task</label>
+              <input
+                type="text"
+                id="task-input"
+                class="form-input"
+                placeholder="What needs to be done?"
+                maxlength="300"
+                required
+              >
+            </div>
+            <button type="submit" class="btn btn-primary btn-add">
+              ➕ Add
+            </button>
+          </div>
+
+          <div class="form-row-datetime">
+            <div class="form-group">
+              <label for="task-date">Reminder Date <span style="color:var(--text-muted);font-weight:400;">(optional)</span></label>
+              <input type="date" id="task-date" class="form-input-datetime">
+            </div>
+            <div class="form-group">
+              <label for="task-time">Reminder Time <span style="color:var(--text-muted);font-weight:400;">(optional)</span></label>
+              <input type="time" id="task-time" class="form-input-datetime">
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- FILTER BAR -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="with-reminder">🔔 With Reminder</button>
+        <button class="filter-btn" data-filter="no-reminder">📝 No Reminder</button>
+      </div>
+
+      <!-- TASKS LIST -->
+      <div class="tasks-section">
+        <div class="tasks-header">
+          <h2>Your Tasks</h2>
+          <span class="tasks-count" id="tasks-count">0</span>
+        </div>
+        <div class="task-list" id="task-list">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <div id="toast-container" class="toast-container"></div>
+  <script src="script.js"></script>
+</body>
+</html>

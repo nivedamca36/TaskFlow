@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFlow — Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-brand-icon">⚡</div>
+      <span class="nav-brand-text">Task<span>Flow</span></span>
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="tasks.html">📝 Tasks</a></li>
+      <li><a href="completed.html">✅ Completed</a></li>
+      <li><a href="reminders.html">🔔 Reminders</a></li>
+      <li><a href="about.html">💡 About</a></li>
+      <li><a href="contact.html" class="active">📬 Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main class="main-content">
+    <div class="container">
+
+      <!-- PAGE HEADER -->
+      <div class="page-header">
+        <div class="page-header-meta">
+          <span class="page-tag">Contact</span>
+        </div>
+        <h1>Get in Touch 📬</h1>
+        <p>You can reach me through the following details.</p>
+      </div>
+
+      <!-- CONTACT GRID -->
+      <div class="contact-grid">
+
+        <div class="contact-card">
+          <div class="contact-icon">👩‍🎓</div>
+          <div class="contact-info">
+            <h3>Name</h3>
+            <p>Niveda Nadar</p>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">🎓</div>
+          <div class="contact-info">
+            <h3>Class</h3>
+            <p>FYMCA - 36</p>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">📧</div>
+          <div class="contact-info">
+            <h3>Email</h3>
+            <p>
+              <a href="mailto:nivedamca2025_36@ncrdsims.edu.in">
+                nivedamca2025_36@ncrdsims.edu.in
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">🐙</div>
+          <div class="contact-info">
+            <h3>GitHub</h3>
+            <p>
+              <a href="https://github.com/nivedamca36" target="_blank" rel="noopener">
+                github.com/nivedamca36
+              </a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- DIVIDER -->
+      <hr class="divider">
+
+      <!-- NOTE CARD -->
+      <div class="info-card" style="animation-delay:0.15s;">
+        <div class="info-card-icon">💬</div>
+        <h3>A Note</h3>
+        <p>
+          This TaskFlow project is created by Niveda Nadar as part of MCA coursework using HTML, CSS, and JavaScript. It demonstrates building a complete responsive web application without using any frameworks.
+        </p>
+        <p style="margin-top:12px;">
+          Feel free to explore, give feedback, or connect through the details above.
+        </p>
+        <div style="display:flex;gap:12px;margin-top:20px;flex-wrap:wrap;">
+          <a href="tasks.html" class="btn btn-primary">➕ Start Adding Tasks</a>
+          <a href="about.html" class="btn btn-ghost">💡 Learn More</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <div id="toast-container" class="toast-container"></div>
+  <script src="script.js"></script>
+</body>
+</html>

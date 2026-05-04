@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFlow — Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-brand-icon">⚡</div>
+      <span class="nav-brand-text">Task<span>Flow</span></span>
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="tasks.html">📝 Tasks</a></li>
+      <li><a href="completed.html">✅ Completed</a></li>
+      <li><a href="reminders.html">🔔 Reminders</a></li>
+      <li><a href="about.html">💡 About</a></li>
+      <li><a href="contact.html">📬 Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main class="main-content">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-eyebrow">Your productivity partner</div>
+      <h1>Stay focused,<br>get things <em>done.</em></h1>
+      <p class="hero-sub">TaskFlow helps you organize your day, track reminders, and celebrate every completed task — no sign-up required.</p>
+      <div class="hero-cta">
+        <a href="tasks.html" class="btn btn-primary">➕ Add a Task</a>
+        <a href="reminders.html" class="btn btn-ghost">🔔 View Reminders</a>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats-bar">
+      <div class="stat-card">
+        <div class="stat-icon">📝</div>
+        <div class="stat-number" id="stat-total">0</div>
+        <div class="stat-label">Active Tasks</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">✅</div>
+        <div class="stat-number" id="stat-completed">0</div>
+        <div class="stat-label">Completed</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">🔔</div>
+        <div class="stat-number" id="stat-reminders">0</div>
+        <div class="stat-label">Upcoming Reminders</div>
+      </div>
+    </section>
+
+    <!-- NAV CARDS -->
+    <section class="nav-cards-section">
+      <div class="section-title">Quick navigate</div>
+      <div class="nav-cards">
+
+        <a href="tasks.html" class="nav-card">
+          <div class="nav-card-icon accent">📝</div>
+          <h3>Tasks</h3>
+          <p>Add, manage, and organize your daily to-dos. Mark them complete when done.</p>
+          <div class="nav-card-arrow">Go to Tasks →</div>
+        </a>
+
+        <a href="completed.html" class="nav-card">
+          <div class="nav-card-icon success">✅</div>
+          <h3>Completed</h3>
+          <p>Review all the tasks you've crushed. Every win counts.</p>
+          <div class="nav-card-arrow">See Completed →</div>
+        </a>
+
+        <a href="reminders.html" class="nav-card">
+          <div class="nav-card-icon warning">🔔</div>
+          <h3>Reminders</h3>
+          <p>Tasks with scheduled dates and times. Overdue and upcoming — all in one view.</p>
+          <div class="nav-card-arrow">View Reminders →</div>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <div id="toast-container" class="toast-container"></div>
+  <script src="script.js"></script>
+</body>
+</html>

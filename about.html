@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFlow — About</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-brand-icon">⚡</div>
+      <span class="nav-brand-text">Task<span>Flow</span></span>
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="tasks.html">📝 Tasks</a></li>
+      <li><a href="completed.html">✅ Completed</a></li>
+      <li><a href="reminders.html">🔔 Reminders</a></li>
+      <li><a href="about.html">💡 About</a></li>
+      <li><a href="contact.html">📬 Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main class="main-content">
+    <div class="container">
+
+      <!-- PAGE HEADER -->
+      <div class="page-header">
+        <div class="page-header-meta">
+          <span class="page-tag">About</span>
+        </div>
+        <h1>About TaskFlow 💡</h1>
+        <p>A lightweight, privacy-first task manager that lives entirely in your browser.</p>
+      </div>
+
+      <!-- ABOUT GRID -->
+      <div class="about-grid">
+
+        <div class="info-card">
+          <div class="info-card-icon">🎯</div>
+          <h3>What is TaskFlow?</h3>
+          <p>
+            TaskFlow is a clean, modern to-do application designed to help you stay organized without the friction. No accounts, no servers, no clutter — just you and your tasks.
+          </p>
+          <p style="margin-top:10px;">
+            All your data lives in your browser's localStorage, which means it's always private, always fast, and works completely offline.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">⚙️</div>
+          <h3>Technologies Used</h3>
+          <p>Built with the fundamentals — no frameworks, no dependencies.</p>
+          <div class="tech-stack">
+            <span class="tech-pill">🌐 HTML5</span>
+            <span class="tech-pill">🎨 CSS3</span>
+            <span class="tech-pill">⚡ JavaScript (ES6+)</span>
+            <span class="tech-pill">💾 localStorage API</span>
+            <span class="tech-pill">🔡 Google Fonts</span>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">✨</div>
+          <h3>Key Features</h3>
+          <ul class="feature-list">
+            <li>Add tasks with optional date & time reminders</li>
+            <li>Mark tasks complete with a single click</li>
+            <li>Separate views for active, completed & reminder tasks</li>
+            <li>Overdue task highlighting</li>
+            <li>Filter tasks by type</li>
+            <li>Persistent storage — survives page refresh</li>
+            <li>Responsive — works on mobile & desktop</li>
+            <li>No login, no server, 100% private</li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">📐</div>
+          <h3>Design Philosophy</h3>
+          <p>
+            TaskFlow follows a <strong style="color:var(--text-primary);">dark productivity</strong> aesthetic — deep charcoal tones with warm amber accents for focus without eye strain.
+          </p>
+          <p style="margin-top:10px;">
+            Typography uses <strong style="color:var(--accent);">Syne</strong> for bold display headings and <strong style="color:var(--accent);">DM Sans</strong> for clear, readable body text.
+          </p>
+          <p style="margin-top:10px;">
+            UI patterns include CSS Grid/Flexbox layouts, smooth micro-animations, and card-based organization for visual clarity.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- DIVIDER -->
+      <hr class="divider">
+
+      <!-- HOW IT WORKS -->
+      <div class="info-card" style="animation-delay:0.2s;">
+        <div class="info-card-icon">🔒</div>
+        <h3>Privacy & Data</h3>
+        <p>
+          TaskFlow stores all your task data locally in your browser using the <code style="background:var(--bg-input);padding:2px 6px;border-radius:4px;font-size:13px;color:var(--accent);">localStorage</code> API under the key <code style="background:var(--bg-input);padding:2px 6px;border-radius:4px;font-size:13px;color:var(--accent);">taskflow_tasks</code>. Your data never leaves your device. No analytics, no tracking, no telemetry. Simply open the browser, and your tasks are right where you left them.
+        </p>
+        <p style="margin-top:12px;color:var(--text-muted);font-size:13px;">
+          ⚠️ Note: Clearing your browser's localStorage or site data will permanently delete your tasks. Consider exporting important data before clearing browser storage.
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <div id="toast-container" class="toast-container"></div>
+  <script src="script.js"></script>
+</body>
+</html>
